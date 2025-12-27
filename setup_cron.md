@@ -32,7 +32,7 @@ Add this line to run every weekday (Monday-Friday) at 17:00 Taipei time:
   - `*`: Month (any)
   - `1-5`: Day of week (Monday=1 through Friday=5)
 - `TZ='Asia/Taipei'`: Set timezone to Taipei
-- The script will automatically fetch yesterday's kbar data
+- The script will automatically fetch today's kbar data
 
 ### 4. Verify cron job is installed
 
