@@ -16,8 +16,9 @@ echo "==================================================" >> "$LOG_FILE"
 echo "Starting kbar fetch at $(date)" >> "$LOG_FILE"
 echo "==================================================" >> "$LOG_FILE"
 
-# Pass all arguments to Python script
-python3 fetch_and_insert_kbars.py "$@" >> "$LOG_FILE" 2>&1
+# Activate virtual environment and run Python script
+source .venv/bin/activate
+python fetch_and_insert_kbars.py "$@" >> "$LOG_FILE" 2>&1
 
 EXIT_CODE=$?
 
