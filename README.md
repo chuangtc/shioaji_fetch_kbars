@@ -14,6 +14,8 @@ Shiaoji SinoPac 永豐金證券 Python API
 ## Install required packages
 
 ```bash
+python3 -m venv .venv
+source ./.venv/bin/activate
 pip install -r requirements.txt
 ```
 
@@ -21,6 +23,12 @@ pip install -r requirements.txt
 
 ```bash
 cp .env.template .env
+```
+
+## After putting in env variables, run it
+
+```bash
+python fetch_and_insert_kbars.py 2025-12-26
 ```
 
 ## 欲開通正式環境 API 下單權限，客戶須於模擬環境完成登入及下單測試.
